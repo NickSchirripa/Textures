@@ -48,7 +48,7 @@ colorTexture.colorSpace = THREE.SRGBColorSpace
 //colorTexture.offset.y = .5
 
 
-colorTexture.rotation  = Math.PI * .5
+colorTexture.rotation  = Math.PI * .25
 colorTexture.center.x = 0.5
 colorTexture.center.y = 0.5
 
