@@ -38,17 +38,19 @@ const metalTexture = textureLoader.load('/textures/door/metalness.jpg')
 const roughTexture = textureLoader.load('/textures/door/roughness.jpg');
 colorTexture.colorSpace = THREE.SRGBColorSpace
 
-colorTexture.repeat.x = 2
-colorTexture.repeat.y = 3
+//colorTexture.repeat.x = 2
+//colorTexture.repeat.y = 3
 
-colorTexture.wrapS = THREE.MirroredRepeatWrapping
-colorTexture.wrapT = THREE.MirroredRepeatWrapping
+//colorTexture.wrapS = THREE.MirroredRepeatWrapping
+//colorTexture.wrapT = THREE.MirroredRepeatWrapping
 
-colorTexture.offset.x = .5
-colorTexture.offset.y = .5
+//colorTexture.offset.x = .5
+//colorTexture.offset.y = .5
 
 
-colorTexture.rotation  = Math.PI * .25
+colorTexture.rotation  = Math.PI * .5
+colorTexture.center.x = 0.5
+colorTexture.center.y = 0.5
 
 
 
