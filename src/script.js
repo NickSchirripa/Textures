@@ -38,6 +38,20 @@ const metalTexture = textureLoader.load('/textures/door/metalness.jpg')
 const roughTexture = textureLoader.load('/textures/door/roughness.jpg');
 colorTexture.colorSpace = THREE.SRGBColorSpace
 
+colorTexture.repeat.x = 2
+colorTexture.repeat.y = 3
+
+colorTexture.wrapS = THREE.MirroredRepeatWrapping
+colorTexture.wrapT = THREE.MirroredRepeatWrapping
+
+colorTexture.offset.x = .5
+colorTexture.offset.y = .5
+
+
+colorTexture.rotation  = Math.PI * .25
+
+
+
 /**
  * Base
  */
@@ -53,6 +67,10 @@ const scene = new THREE.Scene()
 const geometry = new THREE.BoxGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial({ map: colorTexture})
 const mesh = new THREE.Mesh(geometry, material)
+
+
+
+
 scene.add(mesh)
 
 /**
